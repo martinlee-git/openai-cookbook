@@ -1,3 +1,20 @@
+# gpt-oss-보호-가이드
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/gpt-oss-safeguard-guide.md
+- 미러 경로: `articles/gpt-oss-safeguard-guide.md`
+
+## 한글 요약
+
+GPT OSS 세이프가드 소개 및 개요 ROOST와 OpenAI는 gpt oss 세이프가드의 추론 능력을 최대화하는 정책 프롬프트를 작성하고, 심층 분석을 위해 올바른 정책 길이를 선택하고, oss 세이프가드의 추론 출력을 프로덕션 신뢰 및 안전 시스템에 통합하는 방법을 설명하는 가이드를 준비했습니다. GPT OSS 세이프가드란 무엇입니까? gpt oss safe는 사용자 정의 가능한 정책을 기반으로 텍스트 콘텐츠를 분류하는 데 도움이 되도록 안전 분류 작업을 위해 특별히 훈련된 최초의 개방형 가중치 추론 모델입니다. gpt oss의 미세 조정 버전인 gpt oss 보호는 사용자가 제공하는 명시적인 서면 정책을 따르도록 설계되었습니다. 이를 통해 자체 분류, 정의 및 임계값에 따라 분류 결정을 안내하는 자체 정책 Trust & Safety AI를 사용할 수 있습니다. 잘 만들어진 정책은 gpt oss safe의 추론 기능을 잠금 해제하여 미묘한 콘텐츠를 처리하고 경계선 결정을 설명하며 상황적 요인에 적응할 수 있도록 합니다. OpenAI가 어떻게 사용하는지 자세히 알아볼 수 있습니다.
+
+## 핵심 발췌
+
+gpt oss safe의 내부 버전은 여기에서 확인하세요. 대규모 언어 모델은 두 가지 주요 방식으로 안전 모델로 간주될 수 있습니다. 미세 조정된 안전 모델은 일반 추론 모델(예: gpt oss)로 시작하여 사용자 상호 작용 내에서 안전하게 응답하도록 훈련됩니다. 미리 구운 안전 모델(예: ShieldGemma, LlamaGuard, RoGuard 등)에는 "안전하지 않은" 것으로 간주되는 항목에 대한 정의와 고정된 정책 분류가 내장되어 있습니다. gpt oss safe는 신뢰 및 안전 워크플로를 위해 특별히 제작되었으며 자체 서면 표준을 안정적으로 해석 및 시행하고 결정을 내린 이유를 알려줄 수 있는 정책 준수 모델입니다. 모델 이면의 추론은 감사 가능성과 맞춤화에 기반을 둔 더 큰 안전 시스템과의 통합에 매우 적합합니다. gpt oss safe를 사용하는 방법
+
+## 원문 내용
+
 # User guide for gpt-oss-safeguard
 
 ## Introduction & Overview
