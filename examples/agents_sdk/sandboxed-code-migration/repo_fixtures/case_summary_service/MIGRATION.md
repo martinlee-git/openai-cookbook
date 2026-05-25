@@ -1,3 +1,20 @@
+# 이주
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/agents_sdk/sandboxed-code-migration/repo_fixtures/case_summary_service/MIGRATION.md
+- 미러 경로: `examples/agents_sdk/sandboxed-code-migration/repo_fixtures/case_summary_service/MIGRATION.md`
+
+## 한글 요약
+
+마이그레이션 요청: 채팅 완료를 응답으로 이 사례 요약 서비스를 레거시 채팅 완료 호출 형태에서 응답 API 호출 형태로 마이그레이션합니다. 현재 구조 사례 요약 service/client.py에는 OpenAI 클라이언트 래퍼가 포함되어 있습니다. 사례 요약 service/summaries.py는 요약 프롬프트를 작성하고 래퍼를 호출합니다. 테스트/에는 레거시 채팅 완료 형태에 대한 오프라인 가짜가 포함되어 있습니다. 대상 형태 요약 서비스/client.py의 경우 client.chat.completions.create(...) 대신 client.responses.create(...)를 호출하세요. 동일한 모델 인수를 유지하십시오. 래퍼의 메시지 인수를 입력 항목 인수로 바꿉니다. summary service/summaries.py의 경우 두 개의 메시지 시스템/사용자 대화를 입력 항목으로 전달합니다. 입력 항목을 Responses API 입력 인수로 전달합니다. 온도를 0으로 유지하세요. Completion.choices[0].message.content 대신 response.output 텍스트를 반환합니다. 사례 요약(클라이언트, 모델, 사례 메모) 기능 시그니처를 유지합니다. 클라이언트 래퍼 및 요약 테스트 업데이트
+
+## 핵심 발췌
+
+o 채팅 완료 대신 응답 API를 위조합니다. 테스트는 오프라인 상태로 유지되어야 합니다. 실제 OpenAI 클라이언트를 가져오거나 인스턴스화하지 마십시오. 필수 검증 파이프라인 편집하기 전에 기본 테스트를 실행하십시오: python m unittest discover s 테스트 t .. 편집 후 컴파일/확인 명령을 실행하십시오: python m compileall q Case Summary Service Test. 컴파일/검사 명령이 통과된 후 최종 테스트를 실행합니다: python m unittest discover s 테스트 t .. python m unittest discover s 테스트 t ..로 유효성 검증
+
+## 원문 내용
+
 # Migration request: Chat Completions to Responses
 
 Migrate this case summary service from the legacy Chat Completions call shape to
