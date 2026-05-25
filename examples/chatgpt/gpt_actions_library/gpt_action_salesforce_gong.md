@@ -1,3 +1,20 @@
+# gpt_action_salesforce_gong
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/chatgpt/gpt_actions_library/gpt_action_salesforce_gong.md
+- 미러 경로: `examples/chatgpt/gpt_actions_library/gpt_action_salesforce_gong.md`
+
+## 한글 요약
+
+GPT 작업 라이브러리: Salesforce + Gong 소개 이 페이지에서는 GPT 작업을 특정 애플리케이션에 연결하기 위한 미들웨어를 구축하는 개발자를 위한 지침 및 가이드를 제공합니다. 계속하기 전에 먼저 다음 정보를 숙지하세요. GPT 작업 소개 GPT 작업 라이브러리 소개 처음부터 GPT 작업 구축의 예 이 특정 GPT 작업은 Salesforce 및 Gong에서 정보를 검색하는 GPT를 구축하는 방법에 대한 개요를 제공합니다. 여기에는 기존 요리책에 문서화된 여러 사용자 지정 작업을 만드는 것이 포함됩니다. 다음 섹션에서는 이러한 요리책을 강조하겠습니다. 가치 + 비즈니스 사용 사례 예시 가치: 이제 사용자는 ChatGPT의 기능을 활용하여 다음을 수행할 수 있습니다. Salesforce에 연결 고객 계정 검색 이전 통화에서 Gong 기록 검색 사용 사례 예시: 영업 담당자가 다가오는 고객 회의를 준비하고 있습니다. 이 통합을 사용하면 관련 계정 세부 정보를 신속하게 검색할 수 있습니다.
+
+## 핵심 발췌
+
+Salesforce를 통해 최근 Gong 통화 기록에 액세스하고 MEDPICC 또는 SPICED와 같은 검증된 판매 방법론을 중심으로 구성된 AI 생성 요약 및 통찰력을 받아보세요. 이를 통해 담당자는 고객의 현재 상태와 다음 단계를 명확하고 실행 가능한 방식으로 이해할 수 있습니다. 애플리케이션 정보 이 예에서는 (미들웨어를 통해) Salesforce 및 Gong에 연결합니다. Salesforce에 대한 기본 설정 및 인증 지침과 미들웨어 생성에 대해서는 기존 요리책을 참조할 예정입니다. Salesforce GPT 작업 Salesforce용 GPT 작업 설정에 대한 설명서를 참조하세요. 해당 요리책에서 주의해야 할 두 가지 설정은 다음과 같습니다. 응용 프로그램 정보 Salesforce 인증 지침에서 숙지해야 할 필수 개념을 다룹니다.
+
+## 원문 내용
+
 # GPT Action Library: Salesforce + Gong
 
 ## Introduction
