@@ -1,3 +1,20 @@
+# 손잡이가 달린 침대
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/gpt-oss/handle-raw-cot.md
+- 미러 경로: `articles/gpt-oss/handle-raw-cot.md`
+
+## 한글 요약
+
+gpt oss에서 원시 사고 사슬을 처리하는 방법 gpt oss 모델은 모델 구현자의 분석 및 안전 연구를 위한 원시 CoT(사고 사슬)에 대한 액세스를 제공하지만 도구 호출이 CoT의 일부로 수행될 수 있으므로 도구 호출 성능에도 중요합니다. 동시에 원시 CoT에는 잠재적으로 유해한 콘텐츠가 포함되어 있거나 모델을 구현하는 사람이 의도하지 않은 정보(예: 모델에 제공된 지침에 지정된 규칙)가 사용자에게 공개될 수 있습니다. 따라서 최종 사용자에게 원시 CoT를 표시해서는 안 됩니다. 조화/채팅 템플릿 처리 모델은 조화 응답 형식의 일부로 원시 CoT를 인코딩합니다. 자체 채팅 템플릿을 작성하거나 토큰을 직접 처리하는 경우 먼저 화합 가이드를 확인하세요. 몇 가지 사항을 요약하면 다음과 같습니다. 1. CoT가 분석 채널에 발행됩니다. 2. 후속 샘플링 차례에서 최종 채널에 대한 메시지가 전송된 후 모든 분석 메시지가 삭제되어야 합니다. 함수 호출
+
+## 핵심 발췌
+
+해설 채널은 그대로 유지될 수 있습니다. 3. 어시스턴트의 마지막 메시지가 모든 유형의 도구 호출인 경우 이전 최종 메시지까지의 분석 메시지는 최종 메시지가 발행될 때까지 후속 샘플링에서 보존되어야 합니다. Chat Completions API Chat Completions API를 구현하는 경우 게시된 OpenAI 사양에는 생각의 사슬을 처리하기 위한 공식 사양이 없습니다. 호스팅 모델이 당분간 이 기능을 제공하지 않기 때문입니다. 대신 OpenRouter의 다음 규칙을 따르시기 바랍니다. 포함: 1. 원시 CoT는 추론: { 제외: true }가 요청의 일부로 지정되지 않는 한 응답의 일부로 반환됩니다. 자세한 내용은 여기를 참조하세요. 2. 원시 CoT는 출력 메시지의 추론 속성으로 노출됩니다. 3. 델타 이벤트의 경우 델타에는
+
+## 원문 내용
+
 # How to handle the raw chain of thought in gpt-oss
 
 The [gpt-oss models](https://openai.com/open-models) provide access to a raw chain of thought (CoT) meant for analysis and safety research by model implementors, but it’s also crucial for the performance of tool calling, as tool calls can be performed as part of the CoT. At the same time, the raw CoT might contain potentially harmful content or could reveal information to users that the person implementing the model might not intend (like rules specified in the instructions given to the model). You therefore should not show raw CoT to end users.
