@@ -1,3 +1,20 @@
+# chatgpt_prompt_guide
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/chatgpt/chatgpt_prompt_guide/chatgpt_prompt_guide.md
+- 미러 경로: `examples/chatgpt/chatgpt_prompt_guide/chatgpt_prompt_guide.md`
+
+## 한글 요약
+
+ChatGPT Enterprise: 일상 업무를 위한 실용적인 프롬프트 엔지니어링 이 가이드는 고급 기술 전문 지식 없이도 ChatGPT에서 보다 안정적인 결과를 원하는 기업 사용자를 위한 것입니다. 문서 요약, 이메일 초안 작성, 콘텐츠 번역, 간단한 시나리오 분석, 내러티브 브레인스토밍 등 일상 업무에 쉽게 적용할 수 있는 실용적이고 사례 중심의 가이드입니다. 단 하나의 완벽한 프롬프트 템플릿은 없습니다. 이 가이드는 ChatGPT가 신뢰할 수 있고 유용한 결과를 생성할 수 있도록 작업을 명확하게 만드는 데 도움이 되도록 설계되었습니다. <details <summary <strong 지금 바로 사용 시작</strong - 함께 제공되는 Skill을 설치하고 이러한 모범 사례를 즉시 적용하세요</summary 지금 전체 가이드를 읽을 시간이 없습니까? ChatGPT에 함께 제공되는 Skill을 설치하면 이러한 프롬프트 모범 사례를 즉시 적용할 수 있습니다. 여기에서 기술을 다운로드하세요. 모범 사례 프롬프트 기술 기술은 ChatGPT에 방법을 가르치는 재사용 가능한 작은 추가 기능입니다.
+
+## 핵심 발췌
+
+특정 작업을 수행하거나 반복 가능한 작업 흐름을 따릅니다. 이 기술은 이 가이드의 지침을 보다 일관되게 적용할 수 있도록 설계되었으므로 매번 더 적은 수의 설정으로 더 나은 결과를 얻을 수 있습니다. 설치하려면: 1. 위 링크에서 스킬을 다운로드합니다. 2. ChatGPT에 로그인합니다. 3. ChatGPT에서 프로필 아이콘을 클릭합니다. 4. 팝업 메뉴에서 스킬을 선택합니다. 5. 새 스킬을 클릭합니다. 6. 컴퓨터에서 업로드를 선택합니다. 7. 다운로드한 파일을 업로드합니다. 8. 새 채팅을 시작하고 일상 업무에 사용합니다. 그런 다음 시간이 있을 때 이 가이드로 돌아와 접근 방식에 대한 더 자세한 설명, 예시 및 추론을 확인합니다. </details 목차 1. 소개 2. 사고방식 3. 문제 범위 지정 4. 프롬프트를 명확하게 작성 5. ChatGPT를 사용하여 프롬프트 작성(메타 프롬프트) 6. 정확성 향상 7. 결론 8
+
+## 원문 내용
+
 # **ChatGPT Enterprise: Practical prompt engineering for everyday work**
 
 This guide is for Enterprise users who want more reliable results from ChatGPT without needing advanced technical expertise. It is a practical, example-driven guide that is easy to apply to your everyday work, whether that’s summarizing documents, drafting emails, translating content, analyzing simple scenarios, or brainstorming narratives.
