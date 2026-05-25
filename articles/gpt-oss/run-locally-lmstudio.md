@@ -1,3 +1,20 @@
+# 로컬로 실행-lmstudio
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/gpt-oss/run-locally-lmstudio.md
+- 미러 경로: `articles/gpt-oss/run-locally-lmstudio.md`
+
+## 한글 요약
+
+LM Studio를 사용하여 로컬에서 gpt oss를 실행하는 방법 LM Studio는 로컬 하드웨어에서 LLM(대형 언어 모델)을 실행하기 위한 성능이 뛰어나고 친숙한 데스크톱 애플리케이션입니다. 이 가이드는 LM Studio를 사용하여 gpt oss 20b 또는 gpt oss 120b 모델을 설정하고 실행하는 방법과 채팅 방법, MCP 서버 사용 방법, LM Studio의 로컬 개발 API를 통해 모델과 상호 작용하는 방법을 안내합니다. 이 가이드는 PC 또는 Mac에서 gpt oss를 실행하는 것과 같은 소비자 하드웨어를 위한 것입니다. NVIDIA의 H100과 같은 전용 GPU가 있는 서버 애플리케이션의 경우 vLLM 가이드를 확인하세요. 모델 선택 LM Studio는 gpt oss의 두 가지 모델 크기를 모두 지원합니다. openai/gpt oss 20b 더 작은 모델은 최소 16GB의 VRAM만 필요합니다. 고급 소비자 GPU 또는 Apple Silicon Mac에 적합합니다. openai/gpt oss 120b 더 큰 풀 사이즈 모델 ≥60GB VRAM에 가장 적합 멀티 GPU 또는 강력한 워크스테이션 설정에 이상적 LM Studio는 llama.cpp 추론 엔진(GGUF 형식 실행)을 모두 제공합니다. 모델) 및 Apple MLX 엔진
+
+## 핵심 발췌
+
+r Apple Silicon Mac. 빠른 설정 1. LM Studio 설치 LM Studio는 Windows, macOS 및 Linux에서 사용할 수 있습니다. 여기에서 받으세요. 2. gpt oss 모델 다운로드 → 3. LM Studio에서 모델 로드 → LM Studio를 열고 모델 로딩 인터페이스를 사용하여 다운로드한 gpt oss 모델을 로드합니다. 또는 명령줄을 사용할 수도 있습니다. 4. 모델 사용 → 로드되면 LM Studio의 채팅 인터페이스 또는 API를 통해 모델과 직접 상호 작용할 수 있습니다. gpt oss와 채팅 LM Studio의 채팅 인터페이스를 사용하여 gpt oss와 대화를 시작하거나 터미널에서 chat 명령을 사용하십시오. 프롬프트 형식에 대한 참고 사항: LM Studio는 llama.cpp 및 MLX를 통해 실행될 때 OpenAI의 Harmony 라이브러리를 활용하여 gpt oss 모델에 대한 입력을 구성합니다. 로컬 /v1/chat/completions 엔드포인트와 함께 gpt oss 사용 LM Studio ex
+
+## 원문 내용
+
 # How to run gpt-oss locally with LM Studio
 
 [LM Studio](https://lmstudio.ai) is a performant and friendly desktop application for running large language models (LLMs) on local hardware. This guide will walk you through how to set up and run **gpt-oss-20b** or **gpt-oss-120b** models using LM Studio, including how to chat with them, use MCP servers, or interact with the models through LM Studio's local development API.
