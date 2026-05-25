@@ -1,3 +1,20 @@
+# 로컬로 실행-올라마
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/gpt-oss/run-locally-ollama.md
+- 미러 경로: `articles/gpt-oss/run-locally-ollama.md`
+
+## 한글 요약
+
+Ollama를 사용하여 로컬에서 gpt oss를 실행하는 방법 OpenAI gpt oss를 자신의 하드웨어에서 실행하고 싶으십니까? 이 가이드는 Ollama를 사용하여 gpt oss 20b 또는 gpt oss 120b를 로컬로 설정하고, 오프라인으로 채팅하고, API를 통해 사용하고, Agents SDK에 연결하는 방법을 안내합니다. 이 가이드는 PC 또는 Mac에서 모델을 실행하는 것과 같은 소비자 하드웨어를 위한 것입니다. NVIDIA의 H100과 같은 전용 GPU가 있는 서버 애플리케이션의 경우 vLLM 가이드를 확인하세요. 모델 선택 Ollama는 gpt oss의 두 가지 모델 크기를 모두 지원합니다: gpt oss 20b 더 작은 모델 ≥16GB VRAM 또는 통합 메모리에 적합 고급 소비자 GPU 또는 Apple Silicon Mac에 적합 gpt oss 120b 더 큰 풀 사이즈 모델 ≥60GB VRAM 또는 통합 메모리에 가장 적합 멀티 GPU 또는 강력한 워크스테이션 설정에 이상적 몇 가지 참고 사항: 이 모델은 즉시 양자화된 MXFP4를 제공하며 현재 다른 양자화는 없습니다. VRAM이 부족한 경우 CPU로 오프로드할 수 있지만 실행 속도가 느려질 것으로 예상됩니다. 빠른 설정 1. Ollama 설치 → 다운로드
+
+## 핵심 발췌
+
+2. 원하는 모델을 선택하세요. gpt oss와 채팅하세요. 모델과 대화할 준비가 되셨나요? 앱이나 터미널에서 채팅을 시작할 수 있습니다. Ollama는 OpenAI 조화 형식을 모방한 기본 채팅 템플릿을 적용합니다. 메시지를 입력하고 대화를 시작하세요. API 사용 Ollama는 Chat Completions 호환 API를 공개하므로 별다른 변경 없이 OpenAI SDK를 사용할 수 있습니다. 다음은 Python 예입니다. 이전에 OpenAI SDK를 사용해 본 적이 있다면 즉시 익숙해질 것입니다. 또는 Python 또는 JavaScript에서 Ollama SDK를 직접 사용할 수 있습니다. 도구 사용(함수 호출) Ollama는 다음을 수행할 수 있습니다. 기능 호출 내장된 브라우저 도구 사용(앱에서) 채팅 완료를 통한 함수 호출의 예: 모델이 CoT(사고 사슬)의 일부로 도구 호출을 수행할 수 있으므로 중요합니다.
+
+## 원문 내용
+
 # How to run gpt-oss locally with Ollama
 
 Want to get [**OpenAI gpt-oss**](https://openai.com/open-models) running on your own hardware? This guide will walk you through how to use [Ollama](https://ollama.ai) to set up **gpt-oss-20b** or **gpt-oss-120b** locally, to chat with it offline, use it through an API, and even connect it to the Agents SDK.
