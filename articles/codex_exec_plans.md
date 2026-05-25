@@ -1,3 +1,20 @@
+# codex_exec_plans
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/codex_exec_plans.md
+- 미러 경로: `articles/codex_exec_plans.md`
+
+## 한글 요약
+
+여러 시간 동안 문제를 해결하기 위해 PLANS.md 사용 Codex 및 gpt 5.2 코덱스 모델(권장)을 사용하면 연구, 설계 및 구현에 상당한 시간이 걸리는 복잡한 작업을 구현할 수 있습니다. 여기에 설명된 접근 방식은 모델이 이러한 작업을 구현하고 프로젝트를 성공적으로 완료하도록 유도하는 한 가지 방법입니다. 이러한 계획은 철저한 설계 문서이자 "살아있는 문서"입니다. Codex 사용자로서 귀하는 이 문서를 사용하여 Codex가 긴 구현 프로세스를 시작하기 전에 취할 접근 방식을 확인할 수 있습니다. 아래에 포함된 특정 PLANS.md는 Codex가 단일 프롬프트에서 7시간 이상 작동할 수 있도록 한 것과 매우 유사합니다. 먼저 AGENTS.md를 업데이트하여 언제 PLANS.md를 사용해야 하는지 설명하고, 그런 다음 PLANS.md 파일을 저장소에 추가하여 Codex에서 이러한 문서를 사용할 수 있도록 합니다. AGENTS.md AGENTS.md는 Codex와 같은 코딩 에이전트를 안내하기 위한 간단한 형식입니다. 우리는 사용자가 약어로 사용할 수 있는 용어와 간단한 r을 설명합니다.
+
+## 핵심 발췌
+
+계획 문서를 언제 사용할지에 대한 규칙입니다. 여기서는 이를 "ExecPlan"이라고 부릅니다. 이는 임의의 용어이므로 Codex에서는 이에 대해 교육을 받지 않았습니다. 그런 다음 Codex에게 계획의 특정 정의를 지시하도록 요청할 때 이 약칭을 사용할 수 있습니다. 다음은 상담원에게 언제 계획을 사용해야 하는지 지시하는 AGENTS.md 섹션입니다. PLANS.md 아래는 전체 문서입니다. 이 문서의 메시지는 사용자에게 상당한 양의 피드백을 제공하고 계획에서 지정한 내용을 정확하게 구현하도록 모델을 안내하기 위해 신중하게 선택되었습니다. 사용자는 필요에 맞게 파일을 사용자 정의하거나 필수 섹션을 추가 또는 제거함으로써 이점을 얻을 수 있습니다. md Codex 실행 계획(ExecPlans): 이 문서는 코딩이 수행되는 설계 문서인 실행 계획("ExecPlan")에 대한 요구 사항을 설명합니다.
+
+## 원문 내용
+
 # Using PLANS.md for multi-hour problem solving
 
 Codex and the `gpt-5.2-codex` model (recommended) can be used to implement complex tasks that take significant time to research, design, and implement. The approach described here is one way to prompt the model to implement these tasks and to steer it towards successful completion of a project.
