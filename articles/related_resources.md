@@ -1,3 +1,20 @@
+# 관련_자원
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/related_resources.md
+- 미러 경로: `articles/related_resources.md`
+
+## 한글 요약
+
+웹의 관련 리소스 사람들은 GPT의 결과를 개선하기 위한 훌륭한 도구와 논문을 작성하고 있습니다. 다음은 우리가 본 멋진 것들입니다. 프롬프트 라이브러리 및 도구(알파벳순) Arthur Shield: 독성, 환각, 프롬프트 주입 등을 감지하기 위한 유료 제품. Baserun: LLM 기반 앱 테스트, 디버깅 및 모니터링을 위한 유료 제품 Chainlit: 챗봇 인터페이스 제작을 위한 Python 라이브러리. ElatoAI: Deno Edge Runtime 및 Supabase를 사용하여 Arduino의 ESP32에서 OpenAI Realtime API Speech를 실행하기 위한 플랫폼입니다. Embedchain: LLM을 사용하여 구조화되지 않은 데이터를 관리하고 동기화하기 위한 Python 라이브러리입니다. FLAML(A Fast Library for Automated Machine Learning & Tuning): 모델 선택, 하이퍼파라미터 및 기타 조정 가능한 선택을 자동화하기 위한 Python 라이브러리입니다. 지침: 핸들바 템플릿을 사용하여 생성, 메시지 표시 및 논리적 제어를 인터리브하는 Microsoft의 편리해 보이는 Python 라이브러리입니다. Haystack: 맞춤형 구축을 위한 오픈 소스 LLM 조정 프레임워크
+
+## 핵심 발췌
+
+Python으로 제작 가능하고 생산 준비가 완료된 LLM 애플리케이션입니다. HoneyHive: LLM 앱을 평가, 디버깅 및 모니터링하는 엔터프라이즈 플랫폼입니다. LangChain: 언어 모델 프롬프트의 시퀀스를 연결하는 인기 있는 Python/JavaScript 라이브러리입니다. LiteLLM: 일관된 형식으로 LLM API를 호출하기 위한 최소 Python 라이브러리입니다. LlamaIndex: 데이터로 LLM 앱을 강화하기 위한 Python 라이브러리입니다. LLMOps 데이터베이스: 회사가 실제로 LLM을 프로덕션에 배포하는 방법에 대한 데이터베이스입니다. LMQL: 입력 프롬프트, 제어 흐름, 제약 조건 및 도구를 지원하는 LLM 상호 작용을 위한 프로그래밍 언어입니다. OpenAI Evals: 언어 모델 및 프롬프트의 작업 성능을 평가하기 위한 오픈 소스 라이브러리입니다. 개요: 프롬프트를 단순화하고 생성을 제한하기 위해 도메인별 언어를 제공하는 Python 라이브러리입니다. 파레아 AI: A
+
+## 원문 내용
+
 # Related resources from around the web
 
 People are writing great tools and papers for improving outputs from GPT. Here are some cool ones we've seen:
