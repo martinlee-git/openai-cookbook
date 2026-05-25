@@ -1,3 +1,20 @@
+# gpt_action_github
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/chatgpt/gpt_actions_library/gpt_action_github.md
+- 미러 경로: `examples/chatgpt/gpt_actions_library/gpt_action_github.md`
+
+## 한글 요약
+
+GPT 작업 라이브러리: GitHub 소개 이 페이지에서는 GPT 작업을 GitHub에 연결하는 개발자를 위한 지침을 제공합니다. 계속하기 전에 다음 리소스를 숙지하세요. GPT 작업 소개 GPT 작업 라이브러리 처음부터 GPT 작업 구축 이 GPT 작업은 개발자가 GitHub 끌어오기 요청 차이점의 품질과 보안을 평가하는 데 도움이 됩니다. 이는 각 도메인에 대한 피드백과 제안을 제공하므로 개발자는 피드백을 풀 요청에 대한 코멘트로 자동 제출하기 전에 피드백을 수정하거나 수락할 수 있습니다. 가치 및 예시 비즈니스 사용 사례 가치: 사용자는 ChatGPT의 자연어 기능을 활용하여 GitHub Pull Request 검토를 지원할 수 있습니다. 개발자용: 제안된 수정 사항에 대한 즉각적인 피드백을 통해 코드 변경 사항을 분석하고 고품질 검토를 수행합니다. 조직의 경우: 차이점이 모범 사례 및 코딩 표준을 준수하는지 확인하거나 리팩토링된 대안을 자동으로 제안합니다(최선을 정의하려면 추가 API 요청이 필요할 수 있음).
+
+## 핵심 발췌
+
+관행). 전체: 이 AI 기반 코드 검토 도우미를 사용하여 생산성을 높이고 더 높은 품질과 보안 코드를 보장하세요. 사용 사례 예시: 검토자는 제안된 코드 변경의 품질과 보안에 대한 피드백을 구합니다. 조직에서는 코드 검토 중에 모범 사례 및 표준을 자동으로 준수하도록 권장합니다. 데모 비디오: 애플리케이션 정보 주요 링크 시작하기 전에 다음 리소스를 탐색하십시오. GitHub GitHub API 설명서 전제 조건 공개 풀 요청이 있는 저장소가 있는지 확인하십시오. 애플리케이션 설정 풀 요청 선택 1. 저장소(예: PR 예시)로 이동합니다. 소유자(예: "microsoft"), 저장소 이름(예: "vscode") 및 PR 번호(예: "229241")를 기록해 둡니다. 저장소 소유자가 SSO 조직인 경우 토큰에 승인이 필요할 수 있습니다. 2
+
+## 원문 내용
+
 # GPT Action Library: GitHub
 
 ## Introduction
