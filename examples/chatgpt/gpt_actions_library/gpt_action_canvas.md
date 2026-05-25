@@ -1,3 +1,20 @@
+# gpt_action_canvas
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/chatgpt/gpt_actions_library/gpt_action_canvas.md
+- 미러 경로: `examples/chatgpt/gpt_actions_library/gpt_action_canvas.md`
+
+## 한글 요약
+
+Canvas LMS 요리책 목차 1. Canvas LMS의 일반 앱 정보 개요, 해당 기능 및 AI 통합을 통해 교육 경험을 향상시키는 ChatGPT 사용자 정의 작업의 역할. 2. ChatGPT에서 Canvas로 인증 ChatGPT를 Canvas에 연결하기 위한 인증 방법(OAuth 및 사용자 생성 액세스 토큰)에 대한 설명과 각 옵션 설정에 대한 자세한 지침이 있습니다. 3. 샘플 사용 사례: 학생 강좌 도우미 ChatGPT를 사용하여 학생들에게 강좌 탐색, 시험 준비, 특정 API 호출 및 워크플로를 포함한 맞춤형 피드백을 지원하는 자세한 예입니다. 4. 고려해야 할 기타 사용 사례 교실 분석 및 보고서 생성과 같은 Canvas API를 사용한 추가 잠재적 통합. 5. 축하합니다. 일반 앱 정보 캔버스는 온라인 학습 및 교육을 지원하도록 설계된 널리 사용되는 학습 관리 시스템(LMS)입니다. 코스 관리, 콘텐츠 전달, 평가를 위한 강력한 도구 세트를 제공합니다.
+
+## 핵심 발췌
+
+의견, 학생 협업. Canvas REST API를 통해 Canvas는 ChatGPT와 같은 AI 기반 도구를 포함하여 타사 애플리케이션과의 광범위한 사용자 정의 및 통합을 허용합니다. ChatGPT의 Canvas를 사용한 사용자 지정 작업을 통해 교육자는 AI를 활용하여 강좌 콘텐츠를 향상하고 작업을 자동화하며 학생에게 맞춤형 학습 여정을 제공할 수 있습니다. 예를 들어 활성 코스를 기반으로 하는 가상 조교가 포함됩니다. 이 기능은 교육적 대화를 만들기 위해 Canvas에서 정보를 가져오는 데 매우 적합합니다. 사용자 정의 작업이 포함된 ChatGPT는 전체 Canvas 경험을 자동화하거나 Canvas 앱에서 완료하는 데 더 적합한 여러 기능을 대체하기 위한 것이 아닙니다. ChatGPT에서 Canvas로 인증 Authent에 대한 일반적인 개요
+
+## 원문 내용
+
 # Canvas LMS Cookbook
 
 ### Table of Contents
