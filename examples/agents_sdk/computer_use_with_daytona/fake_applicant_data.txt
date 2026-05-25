@@ -1,3 +1,20 @@
+# fake_applicant_data
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/agents_sdk/computer_use_with_daytona/fake_applicant_data.txt
+- 미러 경로: `examples/agents_sdk/computer_use_with_daytona/fake_applicant_data.txt`
+
+## 한글 요약
+
+등록자 정보 ====================== 이름: Emmy Vasquez Chen 박사 이메일: e.vasquez.chen@nullstellensatz.io 전화: +1 (415) 555 0173 생년월일: 1988 03 14 전문 세부 정보 회사: Nullstellensatz Labs 직위: 수석 연구원 부서: 엔지니어링 경력: 11 15년 컨퍼런스 선호 티켓 종류: 프리미엄($599) 티셔츠 사이즈: M 식단 필요: 채식주의자, 글루텐 프리 워크숍: "고급 프롬프트 엔지니어링" "컴퓨터 사용 및 자동화" 여행 및 숙박 도착지: 스위스 취리히 호텔 필요: 예 체크인: 2026 06 15 체크아웃: 2026 06 18 객실 유형: 스탠다드 더블 OTHER Heard 회사 소개: 이메일 뉴스레터 추가 요청: 좌석 근처에 노트북을 사용할 수 있는 전원 콘센트가 필요합니다. 메인 복도에서 떨어진 조용한 방을 선호합니다. 조건: 수락됨
+
+## 핵심 발췌
+
+등록자 정보 ======================= 이름: Emmy Vasquez Chen 박사 이메일: e.vasquez.chen@nullstellensatz.io 전화: +1 (415) 555 0173 생년월일: 1988 03 14 전문 세부정보
+
+## 원문 내용
+
 REGISTRANT INFORMATION
 ======================
 Name:            Dr. Emmy Vasquez-Chen
