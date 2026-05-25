@@ -1,3 +1,20 @@
+# 실행 변압기
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/gpt-oss/run-transformers.md
+- 미러 경로: `articles/gpt-oss/run-transformers.md`
+
+## 한글 요약
+
+Hugging Face Transformers로 gpt oss를 실행하는 방법 Hugging Face의 Transformers 라이브러리는 대규모 언어 모델을 로컬로 또는 서버에서 로드하고 실행할 수 있는 유연한 방법을 제공합니다. 이 가이드는 Transformers를 사용하여 상위 수준 파이프라인 또는 원시 토큰 ID가 있는 하위 수준 생성 호출을 통해 OpenAI gpt oss 20b 또는 OpenAI gpt oss 120b를 실행하는 과정을 안내합니다. 우리는 OpenAI gpt oss 20b 또는 OpenAI gpt oss 120b의 사용에 대해 높은 수준의 파이프라인 추상화, 낮은 수준의 \generate\ 호출, Responses API와 호환되는 방식으로 \transformers Serve\를 통한 로컬 제공 모델을 다룰 것입니다. 이 가이드에서는 Transformer를 통해 gpt oss 모델을 실행하는 최적화된 다양한 방법을 살펴보겠습니다. 보너스: 변압기를 통해 모델을 미세 조정할 수도 있습니다. 여기에서 미세 조정 가이드를 확인하세요. 모델 선택 Hugging Face에서 두 가지 gpt oss 모델을 모두 사용할 수 있습니다. MXFP4 사용 시 openai/gpt oss 20b \ 16GB VRAM 요구 사항 단일 고급 소비자 GPU에 적합 openai/gpt oss 120b ≥60GB VR 필요
+
+## 핵심 발췌
+
+AM 또는 다중 GPU 설정 H100 클래스 하드웨어에 이상적입니다. 둘 다 기본적으로 MXFP4 양자화됩니다. MXFP4는 Hopper 이상의 아키텍처에서 지원됩니다. 여기에는 H100 또는 GB200과 같은 데이터 센터 GPU와 최신 RTX 50xx 소비자 카드 제품군이 포함됩니다. MXFP4 대신 bfloat16을 사용하면 메모리 소비가 더 커집니다(20b 매개변수 모델의 경우 \48GB). 빠른 설정 1. 종속성 설치 새로운 Python 환경을 만드는 것이 좋습니다. MXFP4 호환성을 위해 변환기, 가속 및 Triton 커널을 설치합니다. 2. (선택 사항) 다중 GPU 활성화 대규모 모델을 실행하는 경우 Accelerate 또는 torchrun을 사용하여 장치 매핑을 자동으로 처리합니다. Open AI 응답/채팅 완료 엔드포인트 생성 서버를 시작하려면 변환기 서비스를 사용하면 됩니다.
+
+## 원문 내용
+
 # How to run gpt-oss with Hugging Face Transformers
 
 The Transformers library by Hugging Face provides a flexible way to load and run large language models locally or on a server. This guide will walk you through running [OpenAI gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b) or [OpenAI gpt-oss-120b](https://huggingface.co/openai/gpt-oss-120b) using Transformers, either with a high-level pipeline or via low-level `generate` calls with raw token IDs.
