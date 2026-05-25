@@ -1,3 +1,20 @@
+# what_is_new_with_dalle_3
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/what_is_new_with_dalle_3.mdx
+- 미러 경로: `articles/what_is_new_with_dalle_3.mdx`
+
+## 한글 요약
+
+DALL·E 3의 새로운 점은 무엇입니까? DALL·E 3은 DALL E 텍스트-이미지 생성 모델의 최신 버전입니다. 텍스트-이미지 생성 분야의 최신 기술인 DALL·E는 다양한 영역에 걸쳐 고품질 이미지를 생성할 수 있습니다. DALL·E 3의 구축 방법에 대한 기술적인 세부 사항에 관심이 있다면 당사의 연구 논문에서 자세한 내용을 읽어보실 수 있습니다. 이 기사에서는 DALL·E 3의 새로운 기능 중 일부와 API를 사용하여 구축할 수 있는 새로운 제품에 대한 몇 가지 예를 살펴보겠습니다. 참고로 이미지 생성 API는 변경되지 않았으며 DALL·E 2와 동일한 엔드포인트 및 형식을 유지합니다. 이미지 API 사용 방법에 대한 가이드를 찾고 있다면 해당 주제에 대한 Cookbook 기사를 참조하세요. 현재 DALL·E 3에서 사용할 수 있는 유일한 API 엔드포인트는 Generations(/v1/images/세대)입니다. 편집 및 변형 엔드포인트는 DALL·E 2와 함께 사용할 수 있지만 아직 변형이나 인페인팅을 지원하지 않습니다.
+
+## 핵심 발췌
+
+생성 API 엔드포인트는 텍스트 프롬프트를 기반으로 이미지를 생성합니다. 모델로 생성할 수 있는 기능을 향상시키기 위해 몇 가지 새로운 매개변수를 추가했습니다. 옵션에 대한 간략한 개요는 다음과 같습니다. 새 매개변수: 모델('dall e 2' 또는 'dall e 3'): 생성하는 모델입니다. 비어 있는 경우 기본값은 'dall e 2'이므로 'dall e 3'으로 설정하도록 주의하세요. 스타일('자연스러운' 또는 '선명한'): 생성된 이미지의 스타일입니다. 선명하거나 자연스러워야 합니다. Vivid는 모델이 초현실적이고 극적인 이미지를 생성하는 방향으로 기울도록 만듭니다. 자연스러움은 모델이 더욱 자연스럽고 덜 사실적인 이미지를 생성하도록 합니다. 기본값은 '생생함'입니다. 품질('표준' 또는 'hd'): 생성될 이미지의 품질입니다. 'hd'는 더 미세한 디테일과 더 큰 일관성을 갖춘 이미지를 생성합니다.
+
+## 원문 내용
+
 # What’s new with DALL·E-3?
 
 DALL·E-3 is the latest version of our DALL-E text-to-image generation models. As the current state of the art in text-to-image generation, DALL·E is capable of generating high-quality images across a wide variety of domains. If you're interested in more technical details of how DALL·E-3 was built, you can read more about in our [research paper](https://cdn.openai.com/papers/dall-e-3.pdf). I'll be going over some of the new features and capabilities of DALL·E-3 in this article, as well as some examples of what new products you can build with the API.
