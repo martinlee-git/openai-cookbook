@@ -1,3 +1,20 @@
+# 개방형 하모니
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/openai-harmony.md
+- 미러 경로: `articles/openai-harmony.md`
+
+## 한글 요약
+
+OpenAI 조화 응답 형식 gpt oss 모델은 대화 구조 정의, 추론 출력 생성 및 함수 호출 구조화를 위한 조화 응답 형식에 대해 훈련되었습니다. gpt oss를 직접 사용하지 않고 API나 Ollama와 같은 공급자를 통해 사용하는 경우 추론 솔루션이 형식을 처리하므로 이에 대해 걱정할 필요가 없습니다. 자신만의 추론 솔루션을 구축하는 경우 이 가이드는 프롬프트 형식을 안내합니다. 이 형식은 OpenAI Responses API를 모방하도록 설계되었으므로 이전에 해당 API를 사용한 적이 있다면 이 형식이 익숙할 것입니다. 하모니 형식을 사용하지 않고 gpt oss를 사용하면 올바르게 작동하지 않습니다. 개념 역할 모델이 처리하는 모든 메시지에는 이와 관련된 역할이 있습니다. 모델은 다섯 가지 유형의 역할을 알고 있습니다. | 역할 | 목적 | | : | : | | 시스템 | 시스템 메시지는 추론 노력, 지식 차단과 같은 메타 정보 및 내장 도구를 지정하는 데 사용됩니다. | 디
+
+## 핵심 발췌
+
+개발자 | 개발자 메시지는 모델 지침(일반적으로 "시스템 프롬프트"로 간주되는 것) 및 사용 가능한 기능 도구에 대한 정보를 제공하는 데 사용됩니다. | 사용자 | 일반적으로 모델에 대한 입력을 나타냄 | | 조수 | 도구 호출 또는 메시지 출력일 수 있는 모델의 출력입니다. 출력은 메시지의 의도가 무엇인지 식별하는 특정 "채널"과 연관될 수도 있습니다. | | 도구 | 도구 호출의 출력을 나타내는 메시지입니다. 특정 도구 이름은 메시지 내 역할로 사용됩니다. | 이러한 역할은 명령 충돌이 있는 경우 모델이 적용하는 정보 계층 구조를 나타냅니다. 시스템 \ 개발자 \ 사용자 \ 보조 \ 도구 채널 보조 메시지는 세 가지 다른 "채널"로 출력될 수 있습니다.
+
+## 원문 내용
+
 # OpenAI harmony response format
 
 The [`gpt-oss` models](https://openai.com/open-models) were trained on the harmony response format for defining conversation structures, generating reasoning output and structuring function calls. If you are not using `gpt-oss` directly but through an API or a provider like Ollama, you will not have to be concerned about this as your inference solution will handle the formatting. If you are building your own inference solution, this guide will walk you through the prompt format. The format is designed to mimic the OpenAI Responses API, so if you have used that API before, this format should hopefully feel familiar to you. `gpt-oss` should not be used without using the harmony format, as it will not work correctly.
