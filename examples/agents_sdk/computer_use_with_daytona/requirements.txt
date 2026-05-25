@@ -1,2 +1,19 @@
+# 요구 사항
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/agents_sdk/computer_use_with_daytona/requirements.txt
+- 미러 경로: `examples/agents_sdk/computer_use_with_daytona/requirements.txt`
+
+## 한글 요약
+
+openai 에이전트 데이토나
+
+## 핵심 발췌
+
+openai 에이전트 데이토나
+
+## 원문 내용
+
 openai-agents
 daytona
