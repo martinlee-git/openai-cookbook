@@ -1,3 +1,20 @@
+# 실행-vllm
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/gpt-oss/run-vllm.md
+- 미러 경로: `articles/gpt-oss/run-vllm.md`
+
+## 한글 요약
+
+vLLM을 사용하여 gpt oss를 실행하는 방법 vLLM은 메모리 사용량 및 처리 속도를 최적화하여 LLM(대형 언어 모델)을 효율적으로 제공하도록 설계된 오픈 소스, 높은 처리량 추론 엔진입니다. 이 가이드에서는 vLLM을 사용하여 서버에서 gpt oss 20b 또는 gpt oss 120b를 설정하여 gpt oss를 애플리케이션용 API로 제공하고 Agents SDK에 연결하는 방법을 안내합니다. 이 가이드는 NVIDIA의 H100과 같은 전용 GPU가 있는 서버 애플리케이션을 위한 것입니다. 소비자 GPU에 대한 로컬 추론에 대해서는 Ollama 또는 LM Studio 가이드를 확인하세요. 모델 선택 vLLM은 gpt oss의 두 가지 모델 크기를 모두 지원합니다. openai/gpt oss 20b 더 작은 모델은 약 16GB의 VRAM만 필요합니다. openai/gpt oss 120b 더 큰 전체 크기 모델 ≥60GB VRAM에 가장 적합 단일 H100 또는 다중 GPU 설정에 적합 두 모델 모두 MXFP4로 양자화되어 있습니다. 빠른 설정 1. vLLM 설치 vLLM에서는 uv를 사용하여 Python 환경을 관리할 것을 권장합니다. 이는 귀하의 요구에 따라 올바른 구현을 선택하는 데 도움이 될 것입니다.
+
+## 핵심 발췌
+
+당신의 환경. 빠른 시작에서 자세히 알아보세요. 새로운 가상 환경을 생성하고 vLLM을 설치하려면 다음을 수행합니다. 2. 서버 시작 및 모델 다운로드 vLLM은 HuggingFace에서 모델을 자동으로 다운로드하고 localhost:8000에서 OpenAI 호환 서버를 가동하는 서브 명령을 제공합니다. 서버의 터미널 세션에서 원하는 모델 크기에 따라 다음 명령을 실행합니다. API 사용 vLLM은 Chat Completions 호환 API와 Responses 호환 API를 제공하므로 별다른 변경 없이 OpenAI SDK를 사용할 수 있습니다. 다음은 Python 예입니다. 이전에 OpenAI SDK를 사용한 적이 있다면 즉시 익숙해질 것이며 기본 URL을 변경하여 기존 코드가 작동해야 합니다. 도구 사용(함수 호출) vLLM은 함수 호출을 지원하고 모델 탐색 기능 제공
+
+## 원문 내용
+
 # How to run gpt-oss with vLLM
 
 [vLLM](https://docs.vllm.ai/en/latest/) is an open-source, high-throughput inference engine designed to efficiently serve large language models (LLMs) by optimizing memory usage and processing speed. This guide will walk you through how to use vLLM to set up **gpt-oss-20b** or **gpt-oss-120b** on a server to serve gpt-oss as an API for your applications, and even connect it to the Agents SDK.
