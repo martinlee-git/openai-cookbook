@@ -1,3 +1,20 @@
+# gpt_action_google_calendar
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/chatgpt/gpt_actions_library/gpt_action_google_calendar.md
+- 미러 경로: `examples/chatgpt/gpt_actions_library/gpt_action_google_calendar.md`
+
+## 한글 요약
+
+GPT 작업 라이브러리: Google 캘린더 소개 이 페이지는 특정 애플리케이션에 대한 GPT 작업을 구축하는 개발자를 위한 지침 및 가이드를 제공합니다. 계속하기 전에 먼저 다음 정보를 숙지하세요. GPT 작업 소개 GPT 작업 라이브러리 소개 처음부터 GPT 작업 구축의 예 이 GPT 작업은 Google 캘린더에 연결하는 방법에 대한 개요를 제공합니다. OAuth를 사용하여 Google 계정에 연결하면 캘린더 내에서 이벤트를 생성, 읽기, 업데이트 및 삭제할 수 있습니다. 가치 + 비즈니스 사용 사례의 예 가치: 이제 사용자는 ChatGPT의 자연어 기능을 활용하여 Google 캘린더에 직접 연결할 수 있습니다. 사용 사례 예시: 캘린더에 새 이벤트를 만들고 싶습니다. 특정 기준에 따라 캘린더에서 이벤트를 검색하려고 합니다. 캘린더에서 일정을 삭제하고 싶습니다. 참고: 이는 @<na를 사용하여 다른 GPT에서 호출하는 데 유용할 수 있는 GPT의 좋은 예입니다.
+
+## 핵심 발췌
+
+GPT 기능에 대해 알려주세요. 이 기능에 대한 자세한 내용은 도움말 사이트에서 확인할 수 있습니다. 신청 정보 신청 전제 조건 시작하기 전에 다음 전제 조건을 충족할 수 있는지 확인하세요. Google 캘린더에 액세스할 수 있는 Google 계정. Google Calendar API에 액세스하고 Google Cloud Console을 사용하여 OAuth 자격 증명을 구성할 수 있는 권한입니다. Google 캘린더 구성 단계 Google 캘린더 API 활성화 console.cloud.google.com을 방문하세요. 프로젝트 선택기에서 이 GPT 작업에 사용할 프로젝트를 선택하세요. 아직 프로젝트가 없다면 프로젝트 생성 버튼을 클릭하세요. 새 프로젝트를 생성할 때 이름을 입력하고 연결할 결제 계정을 선택하세요. 이 예에서는 '조직 없음'이 선택되었습니다. <! 아케이드 삽입 시작 <
+
+## 원문 내용
+
 # GPT Action Library: Google Calendar
 
 ## Introduction
