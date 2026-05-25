@@ -1,3 +1,20 @@
+# gpt_action_retool_workflow
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/chatgpt/gpt_actions_library/gpt_action_retool_workflow.md
+- 미러 경로: `examples/chatgpt/gpt_actions_library/gpt_action_retool_workflow.md`
+
+## 한글 요약
+
+GPT 작업 라이브러리: 재도구 작업 흐름 소개 이 페이지에서는 특정 애플리케이션에 대한 GPT 작업을 구축하는 개발자를 위한 지침 및 가이드를 제공합니다. 계속하기 전에 먼저 다음 정보를 숙지하십시오. GPT 작업 소개 GPT 작업 라이브러리 소개 처음부터 GPT 작업 구축의 예 이 특정 GPT 작업은 재구성 작업 흐름에 연결하는 방법에 대한 개요를 제공합니다. 이 작업은 사용자 입력을 받아 웹훅 트리거를 사용하여 Retool의 워크플로로 보냅니다. 그런 다음 Retool은 구성된 워크플로를 수행하고 응답을 JSON 개체로 ChatGPT에 다시 보냅니다. 가치 + 비즈니스 사용 사례의 예 가치: 이제 사용자는 ChatGPT의 자연어 기능을 활용하여 Retool의 모든 워크플로에 직접 연결할 수 있습니다. 사용 사례 예시: GPT에 통합하려는 Retool 워크플로에서 실행 중인 맞춤 코드가 있습니다. 데이터 과학자는 Retool Vector 또는 다른 벡터를 사용하여 외부 VectorDB를 유지합니다.
+
+## 핵심 발췌
+
+DB) 벡터 검색 결과를 다시 ChatGPT로 보내고 싶습니다. Retool은 내부 서비스에 연결하기 위한 미들웨어로 사용되며 Retool의 웹후크를 사용하여 ChatGPT에 이러한 서비스에 대한 액세스를 제공하려고 합니다. 애플리케이션 정보 애플리케이션 키 링크 시작하기 전에 애플리케이션에서 다음 링크를 확인하십시오. 애플리케이션 웹 사이트: https://retool.com/products/workflows 애플리케이션 API 설명서: https://docs.retool.com/workflows 애플리케이션 전제 조건 시작하기 전에 Retool 환경에서 다음 단계를 수행해야 합니다. Retool 계정 설정 간단한 워크플로 생성 애플리케이션 워크플로 단계 다음은 기본 Retool 워크플로의 예입니다. 이 워크플로는 2개의 값을 가져와 추가하고 th로 웹훅 트리거에 응답합니다.
+
+## 원문 내용
+
 # GPT Action Library: Retool Workflow
 
 ## Introduction
