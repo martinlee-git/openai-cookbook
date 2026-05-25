@@ -1,3 +1,20 @@
+# 구현 확인
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/articles/gpt-oss/verifying-implementations.md
+- 미러 경로: `articles/gpt-oss/verifying-implementations.md`
+
+## 한글 요약
+
+gpt oss 구현 확인 OpenAI gpt oss 모델은 개방형 모델 생태계에 많은 새로운 개념을 도입하고 있으며 예상대로 작동하려면 시간이 걸릴 수 있습니다. 이 가이드는 개발자가 구현을 확인하기 위해 추론 솔루션을 구축하는 데 도움을 주거나 공급자의 구현을 스스로 테스트하여 자신감을 얻으려는 개발자를 돕기 위해 작성되었습니다. gpt oss 모델 구현이 다른 이유는 무엇입니까? 새로운 모델은 기존 개방형 모델보다 다른 일부 OpenAI 모델과 더 유사하게 작동합니다. 몇 가지 예는 다음과 같습니다. 1. 조화 응답 형식. 이러한 모델은 대화를 구성하기 위해 OpenAI 조화 형식으로 훈련되었습니다. 일반 API 개발자는 대부분의 경우 조화를 처리할 필요가 없지만 채팅 완료 호환, 응답 호환 또는 기타 추론 API를 제공하는 추론 공급자는 입력을 OpenAI 조화 형식에 올바르게 매핑해야 합니다. 모델이 올바른 형식의 프롬프트를 받지 못하는 경우 이 CA
+
+## 핵심 발췌
+
+n 계단식 생성 문제가 있고 최소한 성능 호출 기능이 더 나쁩니다. 2. 도구 호출 간 CoT(사고 사슬) 처리. 이러한 모델은 CoT의 일부로 도구 호출을 수행할 수 있습니다. 결과적으로 모델은 최종 응답에 도달할 때까지 후속 샘플링에서 CoT를 수신해야 합니다. 이는 원시 CoT가 최종 사용자에게 표시되어서는 안 되지만 개발자가 도구 호출 및 도구 출력과 함께 다시 전달할 수 있도록 API에 의해 반환되어야 함을 의미합니다. 이에 대한 자세한 내용은 별도의 가이드에서 확인할 수 있습니다. 3. 실제 추론 코드의 차이점. 우리는 MXFP4 형식으로만 MoE(전문가 혼합) 가중치를 게시했습니다. 이는 여전히 상대적으로 새로운 형식이며 다른 아키텍처 결정과 함께 작성된 기존 추론 코드입니다.
+
+## 원문 내용
+
 # Verifying gpt-oss implementations
 
 The [OpenAI gpt-oss models](https://openai.com/open-models) are introducing a lot of new concepts to the open-model ecosystem and [getting them to perform as expected might take some time](https://x.com/ClementDelangue/status/1953119901649891367). This guide is meant to help developers building inference solutions to verify their implementations or for developers who want to test any provider’s implementation on their own to gain confidence.
