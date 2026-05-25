@@ -1,3 +1,20 @@
+# 요구 사항
+
+- 원문 저장소: `openai/openai-cookbook`
+- 미러 저장소: `martinlee-git/openai-cookbook`
+- 원문 문서: https://github.com/openai/openai-cookbook/blob/main/examples/agents_sdk/multi-agent-portfolio-collaboration/requirements.txt
+- 미러 경로: `examples/agents_sdk/multi-agent-portfolio-collaboration/requirements.txt`
+
+## 한글 요약
+
+openai openai 에이전트 fredapi yfinance 팬더 numpy matplotlib seaborn scipy cvxpy 아치 mpmath 표 요청 pydantic 로깅
+
+## 핵심 발췌
+
+openai openai 에이전트 fredapi yfinance 팬더 numpy matplotlib seaborn scipy cvxpy 아치 mpmath 표 요청 pydantic 로깅
+
+## 원문 내용
+
 openai
 openai-agents
 fredapi
