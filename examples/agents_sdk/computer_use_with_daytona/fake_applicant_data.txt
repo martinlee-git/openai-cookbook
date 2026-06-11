@@ -11,7 +11,7 @@
 
 ## 핵심 발췌
 
-등록자 정보 ======================= 이름: Emmy Vasquez Chen 박사 이메일: e.vasquez.chen@nullstellensatz.io 전화: +1 (415) 555 0173 생년월일: 1988 03 14 전문 세부정보
+등록자 정보 ====================== 이름: Emmy Vasquez Chen 박사 이메일: e.vasquez.chen@nullstellensatz.io 전화: +1 (415) 555 0173 생년월일: 1988 03 14 전문 세부정보
 
 ## 원문 내용
 
