@@ -1,4 +1,4 @@
-# gpt-oss-safeguard-guide
+# gpt-oss-보호-가이드
 
 - 원문 저장소: `openai/openai-cookbook`
 - 미러 저장소: `martinlee-git/openai-cookbook`
